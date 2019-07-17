@@ -1,79 +1,37 @@
-theme: jekyll-theme-slate
-title: The Entertaiment Cabinet
-description: Joey's entertaiment cabinet
+title: Hello, world! I'm David Freeman
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# Where things are
-source              : .
-destination         : ./_site
-collections_dir     : .
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-collections:
-  posts:
-    output          : true
+# Author Settings
+author: David Freeman # add your name
+author-img: david-freeman.jpg # add your photo
+about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: artemsheludko # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
 
-# Handling Reading
-safe                : false
-include             : [".htaccess"]
-exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
 
-# Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
+# Tracker
+analytics: # Google Analytics
 
-# Plugins
-whitelist           : []
-plugins             : []
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-# Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
+paginate: 8
+paginate_path: "/page/:num"
 
-# Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
-
-# Outputting
-permalink           : date
-paginate_path       : /page:num
-timezone            : null
-
-quiet               : false
-verbose             : false
-defaults            : []
-
-liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
-
-# Markdown Processors
-rdiscount:
-  extensions        : []
-
-redcarpet:
-  extensions        : []
-
-kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : 1..6
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
