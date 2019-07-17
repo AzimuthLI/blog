@@ -3,7 +3,7 @@ layout: post
 title: Install Python on Ubuntu without sudo
 date: 2019-07-17 13:32:20 +0300
 description:  # Add post description (optional)
-img:  # Add image post (optional)
+img:  python_logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Python, Linux]
 ---
