@@ -73,6 +73,8 @@ $ pkg-config --cflags libffi
 
 If they do not show the libffi `/libs` directory and `/include` directory, then the system libffi package is not properly found by the python installer, thus we need to install libffi package from source too.
 
+## Install libffi and link it to python 
+
 1. Download `libffi-3.2.1` and extract the source code:
 
     ```
