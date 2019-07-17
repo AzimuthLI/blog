@@ -437,19 +437,20 @@ template {
 }
 
 .highlight {
-  background-color: #faf9f9;
+  background-color: #ddd8d8;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
 }
 
 .highlighter-rouge {
-  color: #ce887b;
+  color: #0a0a0a;
+  background-color: #ddd8d8;
   font-weight: 400;
-  border: 1px solid #607D8B;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  padding: 0.1rem 0.5rem;
+  border: 0px solid #607D8B;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  padding: 0.1rem 0.1rem;
 }
 
 .highlight .hll {
