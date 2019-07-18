@@ -95,7 +95,7 @@ If they do not show the libffi `/libs` directory and `/include` directory, then 
     $ -e 's/^Cflags: -I${includedir}/Cflags:/'     \
     $ -i libffi.pc.in        && 
     
-    $ ./configure --prefix=~/.local/libffi --disable-static && 
+    $ ./configure --prefix=/<your home dir>/.local/libffi --disable-static && 
     
     $ make -j 16 $$ make install
     ```
@@ -110,7 +110,7 @@ If they do not show the libffi `/libs` directory and `/include` directory, then 
     No package 'libffi' found
     ```
 
-    Then do the following to add system variables and re-run the command above:
+    Then do the following to add environment variables:
 
     ```
     $ echo "PATH=$HOME/.local/libffi/bin:$PATH" >> ~/.bashrc
@@ -118,7 +118,7 @@ If they do not show the libffi `/libs` directory and `/include` directory, then 
     $ source ~/.bashrc
     ```
 
-5. You should see:
+5. Re-run the command above and it should show:
 
     ```
     $ pkg-config --libs-only-l  libffi
