@@ -5,6 +5,7 @@ date: 2019-07-17 13:32:20 +0300
 description:  # Add post description (optional)
 img:  python_logo.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
+comments: true
 tags: [Python, Linux]
 ---
 
