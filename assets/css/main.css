@@ -7,6 +7,7 @@
  *    IE on Windows Phone and in iOS.
  */
 html {
+  height: 100%;
   line-height: 1.15;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -21,6 +22,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
+  height:100%;
   margin: 0;
 }
 
@@ -886,6 +888,8 @@ table tfoot td {
 
 .wrapper {
   max-width: 1250px;
+  height: 100%;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -927,7 +931,7 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
+  position: absolute; /*fixed;*/
   top: 0;
   left: 0;
   bottom: 0;
